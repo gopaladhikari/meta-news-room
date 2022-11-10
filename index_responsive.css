@@ -82,7 +82,11 @@
     display: none;
   }
   .meta-icons {
-    margin-left: 35%;
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .icon-container {
+    font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -131,7 +135,11 @@
     display: none;
   }
   .meta-icons {
-    margin-left: 40%;
+    width: 10rem;
+    margin: 0 auto;
+  }
+  .icon-container {
+    font-size: 1.2rem;
   }
 }
 
@@ -166,6 +174,9 @@
   }
   .footer-list-for-mobile {
     display: none;
+  }
+  .icon-container {
+    font-size: 1.1rem;
   }
 }
 
