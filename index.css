@@ -27,32 +27,12 @@ body {
   border-radius: 10rem;
 }
 
-.nav-item {
-  margin: 3px 1.32rem;
-}
-
 .nav-link {
   color: black !important;
   font-size: 1.05rem;
   cursor: pointer;
   position: relative;
   padding-bottom: 0.25rem;
-}
-
-.nav-item .nav-link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: rgb(49, 49, 241);
-  transition: width 500ms ease-out;
-}
-
-.nav-link:hover::before {
-  width: 100%;
-  left: 0;
 }
 
 .fa-chevron-down {
@@ -69,6 +49,24 @@ body {
 }
 .search-bar:hover {
   color: black;
+}
+form {
+  text-align: center;
+}
+.form {
+  width: 45%;
+  border-bottom: 1px solid black;
+}
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+}
+.input .clear {
+  font-size: 18px;
 }
 
 .navbar-toggler,

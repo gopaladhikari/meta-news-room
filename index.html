@@ -34,76 +34,337 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar p-0 navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <div class="mobile-header d-flex">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="./index.html"
-            ><img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/800px-Meta-Logo.png?20211104123859"
-              class="logo img-fluid d-block"
-          /></a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link p-0 active" aria-current="page" href="#">
-                Shop <i class="fa-solid fa-chevron-down mx-1"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#">
-                Our Technologies <i class="fa-solid fa-chevron-down mx-1"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0" href="#"
-                >About us <i class="fa-solid fa-chevron-down mx-1"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link p-0"
-                >Build with us <i class="fa-solid fa-chevron-down mx-1"></i
-              ></a>
-            </li>
-          </ul>
-          <div class="navbar-nav ms-md-auto">
-            <li class="nav-item">
-              <a class="nav-link p-0" href=""
-                >Support <i class="fa-solid fa-chevron-down mx-1"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="search-bar">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
+    <div id="accordion">
+      <nav class="navbar p-0 navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="mobile-header d-flex">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html"
+              ><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/800px-Meta-Logo.png?20211104123859"
+                class="logo img-fluid d-block"
+            /></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item mx-md-3">
+                <a
+                  role="button"
+                  class="nav-link p-0 active"
+                  href="#shop"
+                  data-bs-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="shop"
                 >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                  />
-                </svg>
-              </a>
-            </li>
+                  <span> Shop</span>
+                  <i class="fa-solid fa-chevron-down mx-1"></i>
+                </a>
+              </li>
+              <div id="shop"></div>
+              <li class="nav-item mx-md-3">
+                <a
+                  role="button"
+                  class="nav-link p-0"
+                  href="#our-technologies"
+                  data-bs-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="our-technologies"
+                >
+                  Our Technologies <i class="fa-solid fa-chevron-down mx-1"></i>
+                </a>
+              </li>
+
+              <li class="nav-item mx-md-3">
+                <a
+                  role="button"
+                  class="nav-link p-0"
+                  href="#about-us"
+                  data-bs-toggle="collapse"
+                  aria-expanded="false"
+                  aria-controls="about-us"
+                  >About us <i class="fa-solid fa-chevron-down mx-1"></i>
+                </a>
+              </li>
+              <li class="nav-item mx-md-3">
+                <a
+                  class="nav-link p-0"
+                  role="button"
+                  data-bs-toggle="collapse"
+                  href="#build-with-us"
+                  aria-expanded="false"
+                  >Build with us <i class="fa-solid fa-chevron-down mx-1"></i
+                ></a>
+              </li>
+            </ul>
+
+            <div class="navbar-nav ms-md-auto">
+              <li class="nav-item mx-md-3 mt-md-2">
+                <a
+                  class="nav-link p-0"
+                  role="button"
+                  href="#support"
+                  aria-expanded="false"
+                  data-bs-toggle="collapse"
+                  >Support <i class="fa-solid fa-chevron-down mx-1"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-md-3 p-2">
+                <a
+                  role="button"
+                  href="#input"
+                  data-bs-toggle="collapse"
+                  aria-expanded="false"
+                  class="search-bar"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <hr />
+
+      <div
+        class="collapse navbar-medium-collapse mt-md-3"
+        id="shop"
+        data-bs-parent="#accordion"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <img
+                src="https://about.fb.com/wp-content/uploads/2022/10/vrimg.png?w=220"
+                class="img-fluid"
+                alt=""
+              />
+
+              <h1 class="categories ms-md-3">Virtual Reality</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Meta Quest Overview</li>
+                <li class="list-group-item">Meta Quest Pro</li>
+                <li class="list-group-item">Meta Quest 2</li>
+                <li class="list-group-item">Accessories</li>
+                <li class="list-group-item">App and Games</li>
+                <li class="list-group-item">VR experience</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="https://about.fb.com/wp-content/uploads/2022/10/vcimg.png?w=220"
+                class="img-fluid"
+                alt=""
+              />
+
+              <h1 class="categories ms-md-3">Video Calling</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Meta Portal Overview</li>
+                <li class="list-group-item">Meta Portal TV</li>
+                <li class="list-group-item">Meta Portal-10"</li>
+                <li class="list-group-item">Meta Portal Go</li>
+                <li class="list-group-item">Meta Portal Plus</li>
+                <li class="list-group-item">Accessories</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <img
+                src="https://about.fb.com/wp-content/uploads/2022/10/sgimg.png?w=220"
+                class="img-fluid"
+                alt=""
+              />
+
+              <h1 class="categories ms-md-3">Smart Glasses with Ray-Ban</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Ray-Ban Stories Overview</li>
+                <li class="list-group-item">Wayfarer</li>
+                <li class="list-group-item">Round</li>
+                <li class="list-group-item">Meteor</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
-    </nav>
-    <hr />
+      <div
+        class="collapse navbar-medium-collapse mt-md-3"
+        id="our-technologies"
+        data-bs-parent="#accordion"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1 class="categories ms-md-3">Devices</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Meta Quest</li>
+                <li class="list-group-item">Meta Portal</li>
+                <li class="list-group-item">Ray-Ban Stories</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1 class="categories ms-md-3">App</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Meta Horizon</li>
+                <li class="list-group-item">Facebook</li>
+                <li class="list-group-item">Messenger</li>
+                <li class="list-group-item">Instagram</li>
+                <li class="list-group-item">WhatsApp</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1 class="categories ms-md-3">Work product</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Work Product Overview</li>
+                <li class="list-group-item">Virtual Reality Heasdset</li>
+                <li class="list-group-item">Video Calling Devices</li>
+                <li class="list-group-item">Meta Horizon Workroom</li>
+                <li class="list-group-item">Workplace</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="collapse navbar-medium-collapse mt-md-3"
+        id="about-us"
+        data-bs-parent="#accordion"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">The Metaverse</li>
+                <li class="list-group-item">Who We Are</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">Our Action</li>
+                <li class="list-group-item">Our Community</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">News</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="collapse navbar-medium-collapse mt-md-3"
+        id="build-with-us"
+        data-bs-parent="#accordion"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">Business</li>
+                <li class="list-group-item">Creator</li>
+                <li class="list-group-item">Developers</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">Career</li>
+                <li class="list-group-item">Investor</li>
+                <li class="list-group-item">Media</li>
+                <li class="list-group-item">Researcher</li>
+                <li class="list-group-item">Engineer</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <ul class="list-group">
+                <li class="list-group-item">Government,Politics & Advocacy</li>
+                <li class="list-group-item">Nonprofit</li>
+                <li class="list-group-item">Educator</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="collapse navbar-medium-collapse mt-md-3"
+        id="support"
+        data-bs-parent="#accordion"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1 class="categories ms-md-3">Shop Help Center</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Help Center</li>
+                <li class="list-group-item">Find Order</li>
+                <li class="list-group-item">Meta Quest"</li>
+                <li class="list-group-item">Meta Portal</li>
+                <li class="list-group-item">Ray-Ban Stories</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1 class="categories ms-md-3">App Help Center</h1>
+              <ul class="list-group">
+                <li class="list-group-item">Meta Horizon</li>
+                <li class="list-group-item">Facebook</li>
+                <li class="list-group-item">Messenger</li>
+                <li class="list-group-item">Instagram</li>
+                <li class="list-group-item">WhatsApp</li>
+                <li class="list-group-item">Workplace</li>
+              </ul>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+      </div>
+      <form
+        class="collapse navbar-medium-collapse"
+        id="input"
+        data-bs-parent="#accordion"
+      >
+        <div class="form m-auto d-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="currentColor"
+            class="bi bi-search mt-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+            />
+          </svg>
+          <input value="Search" class="input mx-2" type="text" />
+          <button type="button" onclick="clickHandler()" class="btn">
+            clear
+          </button>
+        </div>
+      </form>
+    </div>
+
     <!-- Title -->
 
     <div class="container px-md-4">
@@ -121,7 +382,7 @@
               <figure>
                 <img
                   src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=578&q=80"
-                  class="img-fluid"
+                  class="img-fluid img-hover img-hover"
                 />
                 <figcaption class="figLabel mt-3">Meta Quest</figcaption>
               </figure>
@@ -151,7 +412,7 @@
               <div class="first-sec-images me-md-2">
                 <img
                   src="https://about.fb.com/wp-content/uploads/2022/10/Meta-Quest-Pro_LIVE_Header.jpg?w=1536"
-                  class="img-fluid card-img"
+                  class="img-fluid img-hover card-img img-hover"
                   alt=""
                 />
               </div>
@@ -172,7 +433,7 @@
                 <div class="card">
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/IG-Anti-Bullying_Creator-Safety-Bundle_Header.jpg?w=1536"
-                    class="img-fluid"
+                    class="img-fluid img-hover img-hover"
                     alt=""
                   />
                 </div>
@@ -193,7 +454,7 @@
               <div class="first-sec-images">
                 <img
                   src="https://about.fb.com/wp-content/uploads/2022/11/Creator-Economy-Study_Header.jpg?w=1536"
-                  class="img-fluid card-img"
+                  class="img-fluid img-hover card-img img-hover"
                   alt=""
                 />
               </div>
@@ -394,7 +655,7 @@
                 <figure>
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/Global-State-of-Small-Business_-Recovery-Slowing-But-Economic-Optimism-Remains_Header.jpg?w=1536"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -417,7 +678,7 @@
                 <figure>
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/Introducing-New-Features-to-Facebook-Groups_Header.jpg?w=1536"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -440,7 +701,7 @@
                 <figure>
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/Immerse-Yourself-in-Halloween-Horror-on-Meta-Quest_Header.jpg?w=1536"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -462,7 +723,7 @@
                 <figure>
                   <img
                     src="https://img.freepik.com/free-photo/young-smiling-african-man-standing-using-laptop_171337-12867.jpg?w=2000"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -484,7 +745,7 @@
                 <figure>
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/Show-Your-Spirit-With-Liverpool-FC-Kits-in-the-Meta-Avatars-Store_Header.jpg?w=1536"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -507,7 +768,7 @@
                 <figure>
                   <img
                     src="https://about.fb.com/wp-content/uploads/2022/10/Taking-Action-Against-Account-Compromise-Mobile-Apps_Header-1.gif"
-                    class="img-fluid"
+                    class="img-fluid img-hover"
                   />
                 </figure>
               </div>
@@ -683,7 +944,7 @@
       </div>
     </section>
 
-    <section class="footer-list-for-mobile">
+    <section class="footer-list-for-mobile mt-5">
       <div class="container-fluid">
         <div class="row mx-auto">
           <div class="col-12 ps-0 toggle-list-header-container">
