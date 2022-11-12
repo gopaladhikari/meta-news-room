@@ -40,8 +40,8 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.nav-item .nav-link:hover .fa-chevron-down {
-  transform: rotate(180deg);
+.rotate-nav-icon {
+  transform: rotate(180deg) !important;
 }
 
 .search-bar {
